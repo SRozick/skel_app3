@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
 
+  root "pages#home"
+
   resources :microposts
-  root to "microposts#index"
 
   resources :users
-  root to "users#index"
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
